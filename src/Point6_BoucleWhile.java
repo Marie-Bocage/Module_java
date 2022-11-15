@@ -28,7 +28,7 @@ public class Point6_BoucleWhile {
         do {
             System.out.print("Veuillez entrer le code de déverrouillage : ");
             codePinATester = keyboardInput.nextInt();
-            compteur+=1;
+            compteur+=1; // compteur++
 
            if (codePinATester == codePin) {
                 System.out.println("Félicitations, appareil déverouillé !");
