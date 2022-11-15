@@ -3,10 +3,12 @@ import java.util.Scanner;
 
 public class NombreAleatoire {
     public static void main(String[] args) {
-        // génération d'un nombre >= 0 et < 101
-        Random r = new Random();
-        int n = r.nextInt(101);
-        System.out.println(n);
+        // génération d'un nombre 1 et 100
+        Random r=new Random();
+        int bornInf=1;
+        int bornSup=100;
+        int nombreAleatoire = r.nextInt(bornSup - bornInf + 1) + bornInf;
+        System.out.println(nombreAleatoire);
 
         Scanner keyboardInput=new Scanner(System.in);
 
@@ -14,11 +16,11 @@ public class NombreAleatoire {
         int nombreADeviner=keyboardInput.nextInt();
 
         do {
-            if (nombreADeviner > n){
+            if (nombreADeviner > nombreAleatoire){
                 System.out.print("Entrez un plus petit nombre : ");
                 nombreADeviner=keyboardInput.nextInt();
                 continue;
-            } else if (nombreADeviner < n) {
+            } else if (nombreADeviner < nombreAleatoire) {
                 System.out.print("Entrez un plus grand nombre : ");
                 nombreADeviner=keyboardInput.nextInt();
                 continue;
