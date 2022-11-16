@@ -16,7 +16,7 @@ public class Email_mdp {
         int nombreTentatives=0;
 
         do {
-            if(nombreTentatives >= 1){
+            if (nombreTentatives >= 1) {
                 System.out.printf("Il vous reste %d tentatives.\n", (5 - nombreTentatives));
             }
 
