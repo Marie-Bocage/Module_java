@@ -15,10 +15,10 @@ public class TP1_HashMap {
         // Remplissage de la HashMap
         for (int i = 0; i < texteSaisi.length(); i++) {
             if (occurrencesTexte.containsKey(texteSaisi.charAt(i))) {
-                int nombreMiseAJour = occurrencesTexte.get(i) + 1;
+                int nombreMiseAJour = occurrencesTexte.get(texteSaisi.charAt(i)) + 1;
                 occurrencesTexte.replace(texteSaisi.charAt(i), nombreMiseAJour);
             } else {
-                System.out.println(occurrencesTexte);
+//                System.out.println(occurrencesTexte);
                 occurrencesTexte.put(texteSaisi.charAt(i), 1);
             }
         }
