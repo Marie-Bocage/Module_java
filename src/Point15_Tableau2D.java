@@ -11,7 +11,7 @@ public class Point15_Tableau2D {
         System.out.printf("Accéder à 19 => tab[1][1] : %d\n", tab[1][1]);
 
         for (int i = 0; i < tab.length; i++) {
-//            System.out.println(Arrays.toString(tab[i]));
+            System.out.println(Arrays.toString(tab[i]));
             for (int j = 0; j < tab.length; j++) {
                 System.out.println(tab[i][j]);
             }
