@@ -23,12 +23,19 @@ public class TP5_TableauLangages {
         do {
             if (nbARetirer > nb || nbARetirer < 1) {
                 System.out.println("Nombre non valide recommencer !");
+                System.out.print("Combien de langages souhaitez-vous retirer du tableau ? ");
+                nbARetirer=keyboardInput.nextInt();
                 continue;
             } else {
                 System.out.printf("Veuillez saisir le langage n°%d à retirer : ", i +1);
                 String x = keyboardInput.next();
-                languageToRemove.add(x);
-                i++;
+                if (programmingLanguage.contains(x)) {
+                    languageToRemove.add(x);
+                    i++;
+                } else {
+                    System.out.println("Langage de programmation incorrect. Recommencer");
+                    continue;
+                }
             }
         } while (i < nbARetirer);
 
