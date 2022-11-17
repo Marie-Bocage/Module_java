@@ -15,7 +15,7 @@ public class TP3_TableauFois3 {
 
         // Boucle pour demander à l'utilisateur de remplir le tableau
         for (int i = 0; i < tab.length; i++) {
-            System.out.printf("Veuillez remplir le tableau %d de taille %d : ", i +1, tab[i].length);
+            System.out.printf("Veuillez remplir le tableau %d de taille %d : ", i + 1, tab[i].length);
             for (int j = 0; j < tab[i].length; j++) {
                 tab[i][j]=keyboardInput.nextInt();
             }
