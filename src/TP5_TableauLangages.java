@@ -13,21 +13,34 @@ public class TP5_TableauLangages {
             System.out.printf("Veuillez saisir le langage de programmation n°%d : ", i + 1);
             programmingLanguage.add(keyboardInput.next());
         }
-        System.out.println(programmingLanguage);
+//        System.out.println(programmingLanguage);
 
         System.out.print("Combien de langages souhaitez-vous retirer du tableau ? ");
         int nbARetirer=keyboardInput.nextInt();
 
         ArrayList<String> languageToRemove=new ArrayList<>();
-        for (int i = 0; i < nbARetirer; i++){
-            System.out.print("Quels sont-ils ? ");
-            languageToRemove.add(keyboardInput.next());
-        }
-        System.out.println(languageToRemove);
+        int i = 0;
+        do {
+            if (nbARetirer > nb || nbARetirer < 1) {
+                System.out.println("Nombre non valide recommencer !");
+                continue;
+            } else {
+                System.out.printf("Veuillez saisir le langage n°%d à retirer : ", i +1);
+                String x = keyboardInput.next();
+                languageToRemove.add(x);
+                i++;
+            }
+        } while (i < nbARetirer);
 
+//        System.out.println(languageToRemove);
+
+        // Créer une copie de la liste programmingLanguage
+        ArrayList<String> newLanguageList = new ArrayList<>(programmingLanguage);
         for (String language:languageToRemove){
-            programmingLanguage.remove(language);
+            newLanguageList.remove(language);
         }
-        System.out.println("Liste de language après retrait : " + programmingLanguage);
+
+        System.out.println("Liste de langages au départ : " + programmingLanguage);
+        System.out.println("Liste de langages après retrait : " + newLanguageList);
     }
 }

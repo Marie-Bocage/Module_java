@@ -11,7 +11,7 @@ public class TP2_RetourneChaineInverse {
         String texteEnvers="";
         for(int i = texteSaisi.length() - 1; i >= 0; i--)
         {
-            texteEnvers = texteEnvers + texteSaisi.charAt(i);
+            texteEnvers += texteSaisi.charAt(i);
         }
         System.out.println("Résultat à l'envers : " + texteEnvers);
     }
