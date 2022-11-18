@@ -4,6 +4,12 @@ public class Rectangle {
     private double longueur;
     private double largeur;
 
+    // Constructeur
+    public Rectangle(double longueur, double largeur) {
+        this.longueur=longueur;
+        this.largeur=largeur;
+    }
+
     // getters : accesseurs -> permet d'accéder aux attributs
     public double getLongueur(){
         return longueur;
@@ -14,17 +20,17 @@ public class Rectangle {
     }
 
     // setters : manipulateurs -> permet de modifier les attributs
-    public void setLongueur(double nouvelleValeur) {
-        if (nouvelleValeur > 0) {
-            longueur=nouvelleValeur;
+    public void setLongueur(double longueur) {
+        if (longueur > 0) {
+            this.longueur=longueur;
         } else {
             System.out.println("La longueur doit toujours être un nombre positif");
         }
     }
 
-    public void setLargeur(double nouvelleValeur) {
-        if (nouvelleValeur > 0) {
-            largeur=nouvelleValeur;
+    public void setLargeur(double largeur) {
+        if (largeur > 0) {
+            this.largeur=largeur;
         } else {
             System.out.println("La largeur doit toujours être un nombre positif");
         }
