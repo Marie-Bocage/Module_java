@@ -16,6 +16,12 @@ public class Rectangle {
         largeur=5;
     }
 
+    // Constructeur de copie
+    public Rectangle(Rectangle rectangle) { // On passe un objet de type rectangle
+        this.longueur=rectangle.longueur;
+        this.largeur=rectangle.largeur;
+    }
+
     // getters : accesseurs -> permet d'accéder aux attributs
     public double getLongueur(){
         return longueur;

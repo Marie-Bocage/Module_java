@@ -23,7 +23,17 @@ public class Test {
 //        System.out.printf("Périmètre : %.3f\n", perimetre);
 
         Rectangle rect=new Rectangle(400, 350);
+//        System.out.println(rect);
+//        Rectangle rect2=rect;
+//        rect2.setLongueur(1000);
+//        System.out.println(rect);
+//        System.out.println(rect2);
+
+        Rectangle rect2=new Rectangle(rect);
+
+        rect2.setLongueur(1000);
         System.out.println(rect);
+        System.out.println(rect2);
 
 //
 //        System.out.printf("Longueur avant setter : %.1f\n", rect.getLongueur());
@@ -35,8 +45,8 @@ public class Test {
 //        System.out.printf("Surface : %.1f\n", rect.calculSurface());
 //        System.out.printf("Perimetre : %.1f", rect.calculPerimetre());
 
-        Patient patient=new Patient(63.0,1.70);
-        System.out.println(patient);
+//        Patient patient=new Patient(63.0,1.70);
+//        System.out.println(patient);
 //
 //        System.out.printf("IMC : %.1f\n", patient.calculImc());
 //        System.out.println(patient.affichageDonnees());
