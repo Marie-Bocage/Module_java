@@ -40,7 +40,7 @@ public class Patient {
         return poids / Math.pow(taille,2);
     }
 
-    public String affichageDonnees() {
+    public String toString() {
         return String.format("Données Patient:\nPoids : %.2f kg\nTaille : %.2f m\nIMC : %.2f kg/m²", poids, taille, calculImc());
     }
 }

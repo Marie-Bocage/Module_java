@@ -1,5 +1,7 @@
 package poo;
 
+import java.util.ArrayList;
+
 public class Test {
 //    public static double calculSurface(double longueur, double largeur) {
 //        return longueur * largeur;
@@ -20,7 +22,9 @@ public class Test {
 //        System.out.printf("Surface : %.3f\n", surface);
 //        System.out.printf("Périmètre : %.3f\n", perimetre);
 
-//        Rectangle rect=new Rectangle(400, 350);
+        Rectangle rect=new Rectangle(400, 350);
+        System.out.println(rect);
+
 //
 //        System.out.printf("Longueur avant setter : %.1f\n", rect.getLongueur());
 //        System.out.printf("Largeur avant setter : %.1f\n", rect.getLargeur());
@@ -32,11 +36,12 @@ public class Test {
 //        System.out.printf("Perimetre : %.1f", rect.calculPerimetre());
 
         Patient patient=new Patient(63.0,1.70);
-
-        System.out.printf("IMC : %.1f\n", patient.calculImc());
-        System.out.println(patient.affichageDonnees());
-
-        System.out.println(patient.getPoids());
-        System.out.println(patient.getTaille());
+        System.out.println(patient);
+//
+//        System.out.printf("IMC : %.1f\n", patient.calculImc());
+//        System.out.println(patient.affichageDonnees());
+//
+//        System.out.println(patient.getPoids());
+//        System.out.println(patient.getTaille());
     }
 }

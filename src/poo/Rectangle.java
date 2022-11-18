@@ -10,6 +10,12 @@ public class Rectangle {
         this.largeur=largeur;
     }
 
+    // Constructeur par défaut
+    public Rectangle() {
+        longueur=10;
+        largeur=5;
+    }
+
     // getters : accesseurs -> permet d'accéder aux attributs
     public double getLongueur(){
         return longueur;
@@ -42,5 +48,9 @@ public class Rectangle {
 
     public double calculPerimetre() {
         return 2 * (longueur + largeur);
+    }
+
+    public String toString() {
+        return String.format("Longueur : %.2f\nLargeur : %.2f",longueur,largeur);
     }
 }
