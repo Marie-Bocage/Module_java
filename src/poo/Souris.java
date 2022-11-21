@@ -6,7 +6,7 @@ public class Souris {
     private int age;
     private String couleur;
     private int esperanceVie;
-    private boolean clonee;
+    private boolean estClonee; // Convention le nom d'un booléen doit être sous forme de questions.
 
     // Constructeur cosntante
     public static final int ESPERANCE_VIE_DEFAUT=36;
@@ -15,19 +15,19 @@ public class Souris {
     public Souris(int poids, String couleur) {
         this.poids=poids;
         this.couleur=couleur;
-        this.age=age;
+        this.age=0;
         this.esperanceVie=ESPERANCE_VIE_DEFAUT;
-        this.clonee=false;
+        this.estClonee=false;
 
         System.out.println("Une nouvelle souris !");
     }
 
-    // Constructeur par défaut
-    public Souris() {
-        age=0;
-
-        System.out.println("Une nouvelle souris !");
-    }
+//    // Constructeur par défaut
+//    public Souris() {
+//        age=0;
+//
+//        System.out.println("Une nouvelle souris !");
+//    }
 
     // Constructeur copie
     public Souris(Souris souris) {
@@ -35,7 +35,7 @@ public class Souris {
         this.couleur=souris.couleur;
         this.age=souris.age;
         this.esperanceVie=(int)(0.8 * (double)souris.esperanceVie);
-        this.clonee=true;
+        this.estClonee=true;
 
         System.out.println("Clonage d'une souris !");
     }
@@ -58,7 +58,7 @@ public class Souris {
     }
 
     public boolean getClonee(){
-        return clonee;
+        return estClonee;
     }
 
     // Setters
@@ -83,27 +83,26 @@ public class Souris {
     }
 
     public void setClonee() {
-        this.clonee=clonee;
+        this.estClonee=estClonee;
     }
 
     // Méthode toString
     public String toString() {
-        if (clonee == false) {
-            return String.format("Une souris %s, de %d mois et pesant %d grammes.", couleur, age, poids);
-        } else {
-            return String.format("Une souris %s, clonée, de %d mois et pesant %d grammes.", couleur, age, poids);
+        if (this.estClonee == false) {
+            return String.format("Une souris %s, de %d mois et pesant %d grammes.", this.couleur, this.age, this.poids);
         }
+        return String.format("Une souris %s, clonée, de %d mois et pesant %d grammes.", this.couleur, this.age, this.poids);
     }
 
     public void vieillir(){
-        age += 1;
-        if (clonee == true && age > esperanceVie/2) {
-            couleur="verte";
+        this.age += 1;
+        if (this.estClonee && this.age > this.esperanceVie/2) {
+            this.couleur="verte";
         }
     }
 
     public void evolue() {
-        while (age < esperanceVie) {
+        while (this.age < this.esperanceVie) {
             this.vieillir();
         }
     }
