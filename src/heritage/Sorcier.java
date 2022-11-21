@@ -1,21 +1,12 @@
 package heritage;
 
-public class Sorcier extends Personnage{
+public class Sorcier extends Magicien{
     private String baguetteMagique;
     private String batonMagique;
 
     public Sorcier(String name, int dureeDeVie, String baguetteMagique, String batonMagique) {
-        super(name, dureeDeVie);
-        this.baguetteMagique = baguetteMagique;
+        super(name, dureeDeVie, baguetteMagique);
         this.batonMagique = batonMagique;
-    }
-
-    public String getBaguetteMagique() {
-        return baguetteMagique;
-    }
-
-    public void setBaguetteMagique(String baguetteMagique) {
-        this.baguetteMagique = baguetteMagique;
     }
 
     public String getBatonMagique() {

@@ -9,7 +9,6 @@ public class Magicien extends Personnage {
         this.baguetteMagique = baguetteMagique;
     }
 
-
     public String getBaguetteMagique() {
         return baguetteMagique;
     }

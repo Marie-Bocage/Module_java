@@ -1,6 +1,6 @@
 package heritage;
 
-public class Personnage {
+public abstract class Personnage { // Une classe abstraite ne peut pas être instanciée
     private String name;
     private int dureeDeVie;
 
