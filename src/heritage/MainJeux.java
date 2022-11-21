@@ -1,4 +1,4 @@
-package jeux;
+package heritage;
 
 public class MainJeux {
     public static void main(String[] args) {

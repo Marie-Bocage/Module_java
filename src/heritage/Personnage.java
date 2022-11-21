@@ -1,14 +1,12 @@
-package jeux;
+package heritage;
 
-public class Guerrier {
+public class Personnage {
     private String name;
     private int dureeDeVie;
-    private String arme;
 
-    public Guerrier(String name, int dureeDeVie, String arme) {
+    public Personnage(String name, int dureeDeVie) {
         this.name = name;
         this.dureeDeVie = dureeDeVie;
-        this.arme = arme;
     }
 
     public String getName() {
@@ -25,13 +23,5 @@ public class Guerrier {
 
     public void setDureeDeVie(int dureeDeVie) {
         this.dureeDeVie = dureeDeVie;
-    }
-
-    public String getArme() {
-        return arme;
-    }
-
-    public void setArme(String arme) {
-        this.arme = arme;
     }
 }

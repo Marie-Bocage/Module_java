@@ -1,4 +1,4 @@
-package jeux;
+package heritage;
 
 public class Sorcier {
     private String name;
