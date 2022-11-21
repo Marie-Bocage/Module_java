@@ -24,4 +24,10 @@ public abstract class Personnage { // Une classe abstraite ne peut pas être ins
     public void setDureeDeVie(int dureeDeVie) {
         this.dureeDeVie = dureeDeVie;
     }
+
+//    public void presentation() {
+//        System.out.printf("Mon nom est %s et je suis un personnage\n", this.name);
+//    }
+
+    public abstract void presentation();
 }

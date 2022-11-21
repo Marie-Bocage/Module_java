@@ -7,5 +7,8 @@ public class MainJeux {
         var abdelali=new Sorcier("Abdelali Akhyat", 200, "baguette Abdel", "baton Abdel");
 
 //        var thomas=new Personnage("Thomas RUST", 300);
+        chris.presentation();
+        marie.presentation();
+        abdelali.presentation();
     }
 }

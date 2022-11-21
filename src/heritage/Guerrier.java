@@ -16,4 +16,10 @@ public class Guerrier extends Personnage {
     public void setArme(String arme) {
         this.arme = arme;
     }
+
+    @Override
+    public void presentation() {
+        System.out.printf("Mon nom est %s et je suis un guerrier\n", this.getName());
+    }
+
 }

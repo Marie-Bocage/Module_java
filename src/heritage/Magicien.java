@@ -16,4 +16,9 @@ public class Magicien extends Personnage {
     public void setBaguetteMagique(String baguetteMagique) {
         this.baguetteMagique = baguetteMagique;
     }
+
+    @Override
+    public void presentation() {
+        System.out.printf("Mon nom est %s et je suis un magicien\n", this.getName());
+    }
 }

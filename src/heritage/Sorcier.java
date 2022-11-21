@@ -16,4 +16,9 @@ public class Sorcier extends Magicien{
     public void setBatonMagique(String batonMagique) {
         this.batonMagique = batonMagique;
     }
+
+    @Override
+    public void presentation() {
+        System.out.printf("Mon nom est %s et je suis un sorcier\n", this.getName());
+    }
 }
