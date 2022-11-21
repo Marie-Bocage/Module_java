@@ -22,7 +22,7 @@ public class Test {
 //        System.out.printf("Surface : %.3f\n", surface);
 //        System.out.printf("Périmètre : %.3f\n", perimetre);
 
-        Rectangle rect=new Rectangle(400, 350);
+        Rectangle rect=new Rectangle(-400, 350);
 //        System.out.println(rect);
 //        Rectangle rect2=rect;
 //        rect2.setLongueur(1000);
@@ -31,7 +31,7 @@ public class Test {
 
         Rectangle rect2=new Rectangle(rect);
 
-        rect2.setLongueur(1000);
+        rect2.setLongueur(-1000);
         System.out.println(rect);
         System.out.println(rect2);
 
