@@ -11,8 +11,9 @@ public class Tp1 {
         System.out.println(Arrays.toString(tab));
         for (int i = 0; i < tab.length; i++) {
             if (pp > tab[i]) {
-                pp=tab[i]
-;            } else if (pg < tab[i]) {
+                pp=tab[i];
+;            }
+            if (pg < tab[i]) {
                 pg=tab[i];
 ;            }
         }

@@ -33,6 +33,6 @@ public class Tp5 {
             finalPhrase += lettre;
         }
 
-        System.out.println(finalPhrase);
+        System.out.printf("Phrase de départ : %s\nPhrase après suppression des doublons : %s", phrase, finalPhrase);
     }
 }
