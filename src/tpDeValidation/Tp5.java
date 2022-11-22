@@ -12,17 +12,27 @@ public class Tp5 {
         String phrase=keyboardInput.nextLine();
         String phraseFormatted=phrase.replaceAll("[^A-Z-a-z]","").toLowerCase();
 
-        String[] listeLettre=phraseFormatted.split("");
-        ArrayList<String> strList = new ArrayList<String>(
-                Arrays.asList(listeLettre));
-        ArrayList<String> autreListe=new ArrayList<>();
+//        String[] listeLettre=phraseFormatted.split("");
+//        ArrayList<String> strList = new ArrayList<String>(
+//                Arrays.asList(listeLettre));
+        ArrayList<Character> phraseCoupee=new ArrayList<>();
+        for (int i = 0; i < phrase.length(); i++) {
+            phraseCoupee.add(phrase.charAt(i));
+        }
 
-        for (String lettre:listeLettre) {
+        ArrayList<Character> autreListe=new ArrayList<>();
+
+        for (char lettre:phraseCoupee) {
             if (!autreListe.contains(lettre)) {
                 autreListe.add(lettre);
             }
         }
 
-        System.out.println(String.join("", autreListe));
+        String finalPhrase="";
+        for (char lettre:autreListe) {
+            finalPhrase += lettre;
+        }
+
+        System.out.println(finalPhrase);
     }
 }
