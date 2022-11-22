@@ -17,7 +17,7 @@ public class MainArticle {
         var stock=new Program(mesArtciles);
 
         // Test reférence
-//        System.out.println(stock.searchArticle(122));
+        System.out.println(stock.searchArticle(1456));
 
         // Test ajout article
 //        stock.ajoutArticle(article3);
@@ -28,9 +28,9 @@ public class MainArticle {
 //        System.out.println(stock);
 
         // Modifier un article par référence
-        System.out.println(stock);
-        stock.modifierArticle(236, 123);
-        System.out.println(stock);
+//        System.out.println(stock);
+//        stock.modifierArticle(236, 123);
+//        System.out.println(stock);
 
     }
 }

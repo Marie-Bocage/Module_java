@@ -18,14 +18,24 @@ public class Program {
         this.stock = stock;
     }
 
-    public void searchArticle(int ref) {
-        for (Article i:this.stock) {
-            if (i.getNumeroRef() != ref) {
-                System.out.println("Numero de référence incorrect");
-            } else {
-                i.toString();
+    public boolean searchArticle(int ref) {
+        for (Article article:this.stock) {
+            if (this.stock.contains(article)) {
+
             }
         }
+//        for (Article i:this.stock) {
+//            if (i.getNumeroRef() != ref) {
+//                System.out.println("Numero de référence incorrect");
+//            } else {
+//                i.toString();
+         if (this.stock.contains(ref)) {
+             return true;
+//             this.stock.toString();
+         }
+         return false;
+//            }
+//        }
     }
 
     public void ajoutArticle(Article article) {
