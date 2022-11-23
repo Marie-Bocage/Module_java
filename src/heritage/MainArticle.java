@@ -2,7 +2,8 @@ package heritage;
 
 import java.util.ArrayList;
 
-public class MainArticle {
+public class MainArticle { // Faire boucler for qui sert de menu où on demande à l'utilisateur ce qu'il souhaite faire (sous forme de switch case).
+    // Quitter = sortir du menu interactif
     public static void main(String[] args) {
         var article1=new Article(1456,"Article 1",29.99,5);
         var article2=new Article(236,"Article 2",12.56,15);

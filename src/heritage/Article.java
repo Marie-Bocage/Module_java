@@ -1,6 +1,6 @@
 package heritage;
 
-public class Article {
+public class Article { // java object
     private int numeroRef;
     private String nom;
     private double prix;
