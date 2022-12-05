@@ -28,7 +28,7 @@ public class Main {
         System.out.printf("Je m'appelle %s %s, j'ai %d ans et je pèse %.1f kg", prenom, nom, age, poids);
 
         // printf pas de retour à la ligne automatique, il faut ajouter \n à la fin
-        System.out.printf("Nom : %s\nPrenom : %s\nAge : %d\nPoids : %f", nom, prenom, age, poids);
+        System.out.printf("Nom : %s\nPrenom : %s\ntp1NotionsDeBases.Age : %d\nPoids : %f", nom, prenom, age, poids);
 
         // Exo_1 : calcul de la surface et du périmètre
 
