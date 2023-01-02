@@ -1,13 +1,15 @@
+package exoNotionsDeBase;
+
 import java.util.Scanner;
 
-public class Ex_ArrayNotes {
+public class ExArrayNotes {
     public static void main(String[] args) {
 
         // 1. Permettre à l'utilisateur de définir le nombres des notes à stocker
-//        - La valeur doit toujours être > 0
-// 2. Permettre à l'utilisateur d'entrer les notes du tableau à partir du clavier
-//        - Les valeurs ne doivent être qu'entre 0 et 20
-// 3. Calculer et afficher la moyenne
+        // - La valeur doit toujours être > 0
+        // 2. Permettre à l'utilisateur d'entrer les notes du tableau à partir du clavier
+        // - Les valeurs ne doivent être qu'entre 0 et 20
+        // 3. Calculer et afficher la moyenne
 
         var keyboardInput=new Scanner(System.in);
 

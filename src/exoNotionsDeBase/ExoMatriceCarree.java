@@ -1,7 +1,10 @@
-public class Exo_MatriceCarree {
+package exoNotionsDeBase;
+
+public class ExoMatriceCarree {
     public static void main(String[] args) {
-//        Ecrire un programme Java qui déclare une matrice carrée(3x3)
-//        Et qui ensuite va calculer la somme et la différence des deux diagonales
+        // Ecrire un programme Java qui déclare une matrice carrée(3x3)
+        // Et qui ensuite va calculer la somme et la différence des deux diagonales
+
         int[][] matrice={
                 {1,4,9},
                 {2,6,8},
